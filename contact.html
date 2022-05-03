@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 <head>
     <meta charset="utf-8">
 	<meta name="robots" content="follow"/>
@@ -9,10 +9,12 @@
     
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
-    
+    <script
+      src="https://kit.fontawesome.com/f958a050f2.js"
+      crossorigin="anonymous"
+    ></script>
 	<script src="./js/jquery-2.1.0.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/blocs.min.js"></script>
@@ -44,8 +46,6 @@
 				<ul class="site-navigation nav navbar-nav">
 					<li>
 						<a href="index.html">Accueil</a>
-					</li>
-					<li>
 					</li>
 					<li>
 						<a href="contact.html">Contact</a>
@@ -82,25 +82,25 @@
 			<div class="col-sm-6">
 				<form id="form_1">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" class="form-control" required aria-required="true" required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" class="form-control" type="email" aria-required="true" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="populaire">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input class="form-control" id="populaire" aria-required="true" required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						</label>
 						<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
@@ -112,7 +112,7 @@
 			</div>
 			<div class="col-sm-6">
 				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					contact@agencelapanthere.com<br>2 place Sathonay 69001 <strong>Lyon</strong><br>Ouvert de 9h à 18h, du lundi au vendredi<br>
 				</p>
 			</div>
 		</div>
