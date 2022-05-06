@@ -365,11 +365,16 @@ a:hover {
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
-        top: 50%;
-        right: 20px;
+        top: 25px;
+        right: 200px;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
+
+    .navbar .nav li{
+        padding-right: 20px;
+    }
+    
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -685,6 +690,10 @@ p {
     margin: auto auto auto auto;
 }
 
+.img-responsive{
+    width: 100%;
+}
+
 .h1 {
     font-size: 20px;
     font-family: "Open Sans";
@@ -841,17 +850,36 @@ h4 {
 
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
+        width: 30%;
     }
     .nav-center.navbar .nav {
-        max-width: 100%
+        max-width: 100%;
     }
+
+    .navbar .nav li{
+        padding-right: 20px;
+    }
+
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
+    .navbar .nav {
+        max-width: 80%;
+        width: 30%;
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%;
+    }
+
+    .navbar .nav li{
+        padding-right: 20px;
+    }
+
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
@@ -1043,4 +1071,9 @@ h4 {
 
 .citation > p{
     font-size: 20px;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
 }
